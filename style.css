@@ -258,3 +258,11 @@ h6 {
     background-size: cover;
     background-position: center;
 }
+
+.tooltip {
+    position: absolute;
+    color: #999999;
+    font-size: 13px;
+    visibility: hidden;
+    z-index: 1000;
+}
