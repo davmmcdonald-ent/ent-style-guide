@@ -1,0 +1,80 @@
+<h1>Icons</h1>
+<p class="page-description">Icons play a crucial role in enhancing the user experience by providing visual cues and aiding navigation. They can be leveraged to simplify complex actions, highlight important features, and create a more engaging interface. Our design system utilizes the FontAwesome icon library for all icons, specifically the outlined (not filled) <span class="code-inline">fa-light</span> weight variant. This choice ensures a clean and modern look that aligns with our overall design aesthetic. You can explore the full range of icons available at <a href="https://fontawesome.com/search/" target="_blank" rel="noopener noreferrer">FontAwesome</a>.</p>
+<section>
+    <h2>Placement & Use Cases</h2>
+    <p>Icons play a crucial role in enhancing the user experience by providing visual cues and aiding navigation. However, they should be used sparingly to maximize their impact. Overuse of icons can clutter the interface and diminish their effectiveness. Our methodology emphasizes the thoughtful use of icons to ensure they enhance usability and communication without overwhelming the design. Icons should only be used when they provide a necessary visual cue to draw attention. If a section functions and communicates effectively without an icon, it is important to question whether an icon is truly necessary.</p>
+    <h3>Use case examples:</h3>
+    <ul>
+        <li><strong>RTB (Reason to Believe) sections or product cards</strong>: Icons related to the product or feature being highlighted.</li>
+        <li><strong>UI elements</strong>: Such as a search icon in the search bar.</li>
+        <li><strong>Visual representation of key features or benefits</strong>: In product cards to make information more digestible.</li>
+        <li><strong>Navigation elements</strong>: To provide intuitive cues that guide users through their tasks, including links.</li>
+    </ul>      
+</section>
+<section>
+    <h2>Size Variations</h2>
+    <p>Icon sizes play a vital role in maintaining visual consistency and ensuring that icons are appropriately scaled for their context. Our design system provides prebuilt utility classes for icon sizes, which help to adhere to our sizing standards and facilitate the easy rollout of icons. For more details, refer to our <a id="icons" href="javascript:void(0);">Icon Utility Classes</a> page.</p>
+    <div class="icons">
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="font-size: 80px;"></i>
+            <p>80px</p>
+        </div>
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="font-size: 64px;"></i>
+            <p>64px</p>
+        </div>
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="font-size: 40px;"></i>
+            <p>40px</p>
+        </div>
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="font-size: 32px;"></i>
+            <p>32px</p>
+        </div>
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="font-size: 24px;"></i>
+            <p>24px</p>
+        </div>
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="font-size: 16px;"></i>
+            <p>16px</p>
+        </div>        
+    </div>
+    <div class="code-pane">
+        <div class="code-pane__type">CSS</div>
+        <div class="code-pane__content">
+            <p>.icon--80 { font-size: 80px; }</p>
+            <p>.icon--64 { font-size: 64px; }</p>
+            <p>.icon--40 { font-size: 40px; }</p>
+            <p>.icon--32 { font-size: 32px; }</p>
+            <p>.icon--24 { font-size: 24px; }</p>
+            <p>.icon--16 { font-size: 16px; }</p>
+        </div>
+    </div>    
+</section>
+<section>
+    <h2>Color Variations</h2>
+    <p>Icon colors are an essential aspect of our design system, ensuring that icons are visually effective in different contexts. The default variation is primarily used for RTB sections, providing a clean and neutral look. The black variation is mainly used for UI elements, offering high contrast and clarity. The white variation is used for cases when the icon sits on a colored background, such as cards or sections with a color flood. It is important to note that <em>only</em> white icons should be used on colored backgrounds to maintain readability and visual consistency. For more details on how to apply these color variations, refer to our <a href="javascript:void(0);" id="icons">Icon Utility Classes</a> page.</p>
+    <div class="icons">
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="font-size: 40px;"></i>
+            <p>Default</p>
+        </div>
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon" style="color: #000000; font-size: 40px;"></i>
+            <p>Black</p>
+        </div>
+        <div class="icons__card">
+            <i class="fa-light fa-piggy-bank icons__icon icons__icon--frame" style="color: #ffffff; font-size: 40px;"></i>
+            <p>White</p>
+        </div> 
+    </div>
+    <div class="code-pane">
+        <div class="code-pane__type">CSS</div>
+        <div class="code-pane__content">
+            <p>.icon { color: var(--color-dkgrey-1); }</p>
+            <p>.icon--black { color: #000000; }</p>
+            <p>.icon--white { color: #ffffff; }</p>
+        </div>
+    </div>    
+</section>

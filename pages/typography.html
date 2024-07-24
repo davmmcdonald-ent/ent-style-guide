@@ -1,0 +1,63 @@
+<h1>Typography</h1>
+<p class="page-description">Typography is a crucial component of our design system, ensuring consistency and readability across the site.</p>
+
+<section>
+    <h2>Font Family</h2>
+    <p>We use the <span class="code-inline">New Hero</span> font throughout our platform to create a modern and cohesive look. You can find and use this font from <a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>.</p>
+</section>
+
+<section>
+    <h2>Sizing & Weight</h2>
+    <p>Using REM (Root EM) units for font sizing is preferable over setting font sizes in PX (pixels) because REM units are relative to the root element (usually the HTML element). This ensures that font sizes scale proportionally based on the user's default font size settings in their browser. This adaptability enhances accessibility, as users with visual impairments often increase default font sizes to make text more readable. Additionally, REM units promote a more responsive design. When the base font size is adjusted, all elements sized with REM units will scale consistently, maintaining the design's visual hierarchy and proportions.</p>
+    <p>We use a <span class="code-inline">font-size: 62.5%</span> rule in the HTML CSS to make REM sizing calculations easier. Setting the base font size to 62.5% makes it easier to calculate REM values because 1rem will equal 10px. For instance, 1.6rem would be 16px, 2rem would be 20px, and so on. This simplification facilitates quick mental conversions and promotes a more intuitive approach to setting and adjusting font sizes across the design. By using a 62.5% base, designers can work with more straightforward numbers, reducing the likelihood of errors and ensuring a consistent, scalable typography system that adapts seamlessly to various screen sizes and user settings.</p>
+    <div class="code-pane">
+        <div class="code-pane__type">CSS</div>
+        <div class="code-pane__content">
+            <p>html { font-size: 62.5%; }</p>
+        </div>
+    </div>
+    <p>Our baseline styling for headings (<span class="code-inline">h1</span>-<span class="code-inline">h6</span>) and paragraph (<span class="code-inline">p</span>) text ensures a consistent visual hierarchy and readability.</p>
+    <div class="typography">
+        <div class="typography__row">
+            <p class="typography__label">H1</p>
+            <h1 class="typography__h1">H1 Header</h1>
+        </div>
+        <div class="typography__row">
+            <p class="typography__label">H2</p>
+            <h2 class="typography__h2">H2 Header</h2>
+        </div>
+        <div class="typography__row">
+            <p class="typography__label">H3</p>
+            <h3 class="typography__h3">H3 Header</h3>
+        </div>
+        <div class="typography__row">
+            <p class="typography__label">H4</p>
+            <h4 class="typography__h4">H4 Header</h4>
+        </div>
+        <div class="typography__row">
+            <p class="typography__label">H5</p>
+            <h5 class="typography__h5">H5 Header</h5>
+        </div>
+        <div class="typography__row">
+            <p class="typography__label">H6</p>
+            <h6 class="typography__h6">H6 Header</h6>
+        </div>
+        <div class="typography__row">
+            <p class="typography__label">Paragraph</p>
+            <p class="typography__p">This is a paragraph text.</p>
+        </div>
+    </div>    
+    <div class="code-pane">
+        <div class="code-pane__type">CSS</div>
+        <div class="code-pane__content">
+            <p>h1 { font-size: 6rem; /* 60px */ }</p>
+            <p>h2 { font-size: 4.8rem; /* 48px */ }</p>
+            <p>h3 { font-size: 3.6rem; /* 36px */ }</p>
+            <p>h4 { font-size: 2.4rem; /* 24px */ }</p>
+            <p>h5 { font-size: 2rem; /* 20px */ }</p>
+            <p>h6 { font-size: 1.7rem; /* 17px */ }</p>
+            <p>p { font-size: 1.5rem; /* 15px */ }</p>            
+        </div>
+    </div>    
+    <p>We also have documentation for a range of utility classes for text size and alignment to help you adhere to our typography standards. For more details, refer to our <a href="javascript:void(0);" id="text" class="anchor-inline">Text Utility Classes</a> page.</p>
+</section>
