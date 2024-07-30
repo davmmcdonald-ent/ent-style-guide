@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#content-placeholder').load('pages/colors.html');
+    $('#content-placeholder').load('pages/color-palette.html');
 
     // Toggle link visibility based on selected category
     $('.sidebar__category').click(function() {
