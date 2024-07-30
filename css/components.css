@@ -12,28 +12,26 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    background-color: var(--color-ltgrey-2);
+    background-color: #000000;
+    color: #ffffff;
     font-weight: 700;
     cursor: pointer;
 }
 
 .code-pane__type::after {
     content: '\f0c5';
-    font: var(--fa-font-solid);
+    font: var(--fa-font-light);
 }
 
 .code-pane__content {
     padding: 12px 0;
-    color: var(--color-secondary)
+    background-color: #efefef;
+    color: var(--color-secondary);
 }
 
 .code-pane__content > * {
     margin: 0;
     padding: 0 12px;
-}
-
-.code-pane__content > *:nth-child(even) {
-    background-color: #eeeeee;
 }
 
 .colors {

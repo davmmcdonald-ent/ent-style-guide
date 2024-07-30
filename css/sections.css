@@ -6,7 +6,7 @@
     left: 0;
     width: 240px;
     min-height: 100vh;
-    border-right: 1px solid var(--color-ltgrey-2);
+    background-color: var(--color-ltgrey-1);
     color: #000000;
 }
 
@@ -34,7 +34,7 @@
 
 .sidebar__category::after {
     content: '\f0da';
-    font: var(--fa-font-light);
+    font: var(--fa-font-solid);
 }
 
 .sidebar__category--active {
@@ -43,7 +43,7 @@
 
 .sidebar__category--active::after {
     content: '\f0d7';
-    font: var(--fa-font-light);
+    font: var(--fa-font-solid);
 }
 
 .sidebar__collapsable {
@@ -60,7 +60,7 @@
 }
 
 .sidebar__item--active {
-    background-color: var(--color-ltgrey-1);
+    background-color: var(--color-ltgrey-2);
 }
 
 .content {

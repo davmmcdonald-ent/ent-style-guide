@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#content-placeholder').load('pages/borders-shading.html');
+    $('#content-placeholder').load('pages/colors.html');
 
     // Toggle link visibility based on selected category
     $('.sidebar__category').click(function() {
